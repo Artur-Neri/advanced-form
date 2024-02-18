@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* CORES */
+    --color-bg: #EFF5FF;
+    --color-border: #D6D9E6;
+    --color-denim: #022959;
+    --color-grey: #9699AA;
+    --color-light-blue: #ABBCFF;
+    --color-light-grey: #D6D9E6;
+    --color-orange: #FFAF7E;
+    --color-pink: #F9818E;
+    --color-purple: #483EFF;
+    --color-red-errors: #EE374A;
+    --color-sky-blue: #BEE2FD;
+    --color-very-light-blue: #F8F9FF;
+    --color-white: #FFFFFF;
+
+    /* ESTILO DE FONTE */
+
+    --font-ubuntu: "Ubuntu", sans-serif;
+
+    /* TAMANHOS DE FONTE */
+    --font-size-heading: 2rem;
+    --font-size-g: 1rem;
+    --font-size-m: 0.875rem;
+    --font-size-p: 0.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: var(--font-ubuntu);
+
+    min-height: 100vh;
+
+    background-color: var(--color-bg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 6.25rem;
+
+    border-radius: 1rem;
+    padding: 1rem;
+
+    background-color: var(--color-white);
+}
+
+.sumario-desktop {
+    background-color: var(--color-purple);
+    background-image: url('../assets/images/bg-sidebar-desktop.svg');   
+
+    border-radius: .5rem;
+}
+
+.sumario__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 89px;
+}
+
+.sumario__step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sumario__step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: auto;
+    font-weight: 700;
+
+    width: 33px;
+    height: 33px;
+    text-align: center;
+
+    padding: 5px 9px;
+    border-radius: 50%;
+    border: 1px solid white;
+
+    font-size: var(--font-size-m);
+
+    background-color: transparent;
+    color: var(--color-white);
+}
+
+.highlighted-number {
+    background-color: var(--color-sky-blue);
+    color: var(--color-denim);
+    border: none;
+}
+
+.estado {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    margin-right: 100px;
+}
+
+.estado__text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.estado__title {
+    font-size: var(--font-size-heading);
+    color: var(--color-denim);
+}
+
+.estado__description {
+    color: var(--color-grey);
+    font-size: var(--font-size-g);
+}
