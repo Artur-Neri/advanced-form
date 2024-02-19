@@ -59,6 +59,8 @@ body {
 .sumario-desktop {
   background-color: var(--color-purple);
   background-image: url("../assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   height: 100%;
 
@@ -73,6 +75,7 @@ body {
   margin-top: 2.5rem;
   margin-left: 2rem;
   margin-right: 89px;
+  margin-bottom: 300px;
 }
 
 .sumario__step {
@@ -86,7 +89,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  line-height: auto;
   font-weight: 700;
 
   width: 33px;
@@ -103,6 +105,24 @@ body {
   color: var(--color-white);
 }
 
+.sumario__step__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--font-size-m);
+}
+
+.sumario__step__title {
+  text-transform: uppercase;
+  color: var(--color-light-blue);
+}
+
+.sumario__step__description {
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
 .highlighted-number {
   background-color: var(--color-sky-blue);
   color: var(--color-denim);
@@ -115,6 +135,7 @@ body {
   gap: 2.5rem;
 
   margin-right: 100px;
+  margin-top: 56px;
 }
 
 .estado__text {
@@ -166,5 +187,15 @@ input::placeholder {
 }
 
 input[type="submit"] {
-  display: inline;
+  width: fit-content;
+  align-self: flex-end;
+
+  margin-top: 52px;
+  padding: 14px 25px;
+
+  font-size: var(--font-size-g);
+  font-weight: 500;
+
+  background-color: var(--color-denim);
+  color: var(--color-white);
 }
