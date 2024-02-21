@@ -132,6 +132,8 @@ body {
 .estado {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2.5rem;
 
   margin-right: 100px;
@@ -204,4 +206,21 @@ input[type="submit"] {
 
   background-color: var(--color-denim);
   color: var(--color-white);
+}
+
+.estado__plans {
+  display: flex;
+  gap: 1.125rem;
+}
+
+.estado__plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 2.4375rem;
+
+  padding: 1.25rem 1rem;
+
+  border-color: var(--color-border);
 }
